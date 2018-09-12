@@ -36,7 +36,7 @@ const RightGutter = styled.div`
   margin-right: 5px;
   > div {
     position: relative;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     text-align: right;
     height: 40px;
@@ -47,11 +47,10 @@ const Links = styled.ul`
   justify-content: space-around;
   > * {
     padding-left: 0.8rem;
-    margin-right: 10px;
+    margin-right: 5px;
     padding: 0 1rem;
     height: 40px;
     font-size: 14px;
-    line-height: 5px;
     list-style: none;
     text-decoration: none;
     cursor: pointer;
@@ -61,6 +60,27 @@ const Links = styled.ul`
     text-align: center;
     position: relative;
     overflow: hidden;
+    transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+    z-index: 2;
+    font-weight: 400;
+    > span {
+      background-color: #39e09b;
+      border: 2px solid #39e09b;
+      border-radius: 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+      z-index: 2;
+      backface-visibility: hidden;
+      letter-spacing: 0.5px;
+      font-size: 16px;
+      outline: 0 !important;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 8px;
+    }
   }
 `;
 const header = () => (
@@ -126,7 +146,9 @@ const header = () => (
               <Link to="/price">Price</Link>
               <Link to="/help">Help</Link>
               <Link to="/login">Login</Link>
-              <Link to="/signup">SIGN UP FREE</Link>
+              <Link to="/signup">
+                <span>SIGN UP FREE</span>
+              </Link>
             </Links>
           </div>
         </RightGutter>
