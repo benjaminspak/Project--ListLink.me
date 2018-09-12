@@ -124,6 +124,12 @@ const IphoneText = styled.div`
       text-align: left;
       font-size: 30px;
       margin: 1.5rem auto 1rem;
+      font-weight: 200;
+    }
+    > p {
+      font-size: 16px;
+      line-height: 1.5em;
+      margin: 1.2rem 0px;
     }
   }
 `;
