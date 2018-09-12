@@ -72,6 +72,61 @@ const TextHero = styled.div`
     }
   }
 `;
+const HowHero = styled.div`
+  margin-bottom: 80px;
+  display: block;
+  > div {
+    position: relative;
+    padding: 0px;
+    max-width: 1080px;
+    margin: 0px auto;
+  }
+`;
+const IphoneHolder = styled.div`
+  width: 55%;
+  position: absolute;
+  max-width: 682px;
+  padding-bottom: 59.1642%;
+  background-image: none;
+`;
+const IphoneVideo = styled.div`
+  display: block;
+`;
+const Video = styled.video`
+  position: absolute;
+  left: 28.5%;
+  width: 41.8%;
+  height: 91%;
+  object-fit: contain;
+`;
+const IphoneImage = styled.div`
+  background-image: url(https://d1qr63pinnvtia.cloudfront.net/images/phone_linktree_home_new_d7a071bb.png);
+  background-size: contain;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-position: center center;
+  background-repeat: no-repeat;
+`;
+const IphoneText = styled.div`
+  text-align: left;
+  width: 45%;
+  margin-left: 52%;
+  padding-bottom: 59.1642%;
+  position: relative;
+  > div {
+    max-width: 385px;
+    margin: 0px auto;
+    > h4 {
+      text-align: left;
+      font-size: 30px;
+      margin: 1.5rem auto 1rem;
+    }
+  }
+`;
 const landing = () => (
   <Landing>
     <MainHero>
@@ -89,6 +144,33 @@ const landing = () => (
         <h3>Never change your bio link again.</h3>
       </div>
     </TextHero>
+    <HowHero>
+      <div>
+        <IphoneHolder>
+          <IphoneVideo>
+            <Video preload="yes" width="303" height="540" autoPlay="true" loop="loop" muted>
+              <source
+                src="https://d1qr63pinnvtia.cloudfront.net/images/homepage_animation.mp4"
+                type="video/mp4"
+              />
+              <div />
+            </Video>
+            <IphoneImage />
+          </IphoneVideo>
+        </IphoneHolder>
+        <IphoneText>
+          <div>
+            <h4>How it works</h4>
+            <p>
+              Linktree is a free tool for optimising your Instagram traffic, whether you’re a
+              blogger, an artist or run a content platform.
+            </p>
+            <p>You’ll get one bio link to house all the content you’re driving followers to.</p>
+            <p>Let your content live longer than the feed.</p>
+          </div>
+        </IphoneText>
+      </div>
+    </HowHero>
   </Landing>
 );
 
