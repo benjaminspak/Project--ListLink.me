@@ -7,9 +7,10 @@ import registerServiceWorker from './registerServiceWorker';
 
 injectGlobal`
   body {
+    font-family: 'Karla', Helvetica, sans-serif;
+    color: #222;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', 'sans-serif';
   }
 `;
 
