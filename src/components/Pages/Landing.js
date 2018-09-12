@@ -118,6 +118,10 @@ const IphoneText = styled.div`
   padding-bottom: 59.1642%;
   position: relative;
   > div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-bottom: 15%;
     max-width: 385px;
     margin: 0px auto;
     > h4 {
@@ -130,6 +134,30 @@ const IphoneText = styled.div`
       font-size: 16px;
       line-height: 1.5em;
       margin: 1.2rem 0px;
+    }
+    > a {
+      color: rgb(255, 255, 255);
+      background-color: rgb(57, 224, 155);
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      backface-visibility: hidden;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-size: 16px;
+      border-width: 2px;
+      border-style: solid;
+      border-color: rgb(57, 224, 155);
+      border-image: initial;
+      border-radius: 0px;
+      overflow: hidden;
+      transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+      padding: 15px 35px;
+      font-weight: 700;
+      display: inline-block;
+      line-height: 1.5
+      text-decoration: none;
+      outline: 0px !important;
     }
   }
 `;
@@ -173,6 +201,7 @@ const landing = () => (
             </p>
             <p>You’ll get one bio link to house all the content you’re driving followers to.</p>
             <p>Let your content live longer than the feed.</p>
+            <a href="/signup">SIGN IN</a>
           </div>
         </IphoneText>
       </div>
