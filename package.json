@@ -1,7 +1,6 @@
 {
   "name": "listlink.me",
   "version": "0.1.0",
-  "homepage": "https://adroit11.github.io/listlink.me/",
   "private": true,
   "dependencies": {
     "react": "^16.4.2",
@@ -15,9 +14,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
     "eslint": "4.19.1",
