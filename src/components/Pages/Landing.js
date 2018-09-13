@@ -176,6 +176,13 @@ const InnerCol = styled.div`
   margin-right: 3.5%;
   margin-top: 0;
   vertical-align: top;
+  > h4 {
+    margin: 1.5rem auto 1rem;
+  }
+  > p {
+    line-height: 1.5em;
+    margin: 1.2rem 0;
+  }
 `;
 const Col1 = styled.div`
   height: 82px;
