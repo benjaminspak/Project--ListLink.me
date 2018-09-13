@@ -175,9 +175,11 @@ const InnerCol = styled.div`
   text-align: center;
   display: inline-block;
   width: 31%;
+  margin: 0 2.3% 0 0;
   margin-top: 0;
   vertical-align: top;
   > h4 {
+    font-size: 30px;
     margin: 1.5rem auto 1rem;
     font-family: Karla, Helvetica, sans-serif;
     font-weight: 200;
@@ -193,6 +195,39 @@ const Col1 = styled.div`
   width: 69px;
   display: block;
   margin: 0 auto;
+`;
+const CenterButton = styled.div`
+  display: block;
+  padding: 110px 0 90px 0;
+  > div {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 135px;
+    margin: 0 auto;
+    max-width: 1080px;
+    > a {
+      cursor: pointer;
+      color: #fff;
+      background-color: #39e09b;
+      border: 2px solid #39e09b;
+      border-radius: 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: all .25s cubic-bezier(.08,.59,.29,.99);
+      z-index: 2;
+      backface-visibility: hidden;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      font-size: 16px;
+      padding: 15px 35px;
+      outline: 0!important;
+      font-weight: 700
+      text-decoration: none;
+      display: inline-block;
+      line-height: 1.5;
+    }
+  }
 `;
 
 const landing = () => (
@@ -277,6 +312,11 @@ const landing = () => (
         </InnerCol>
       </div>
     </ThreeCol>
+    <CenterButton>
+      <div>
+        <a href="/">It's exactly what I need!</a>
+      </div>
+    </CenterButton>
   </Landing>
 );
 
