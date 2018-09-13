@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Onebio from './assests/onebio';
+import Destination from './assests/destination';
+import Managed from './assests/managed';
 
 const Landing = styled.div`
   display: block;
@@ -173,11 +175,13 @@ const InnerCol = styled.div`
   text-align: center;
   display: inline-block;
   width: 31%;
-  margin-right: 3.5%;
   margin-top: 0;
   vertical-align: top;
   > h4 {
     margin: 1.5rem auto 1rem;
+    font-family: Karla, Helvetica, sans-serif;
+    font-weight: 200;
+    color: #222;
   }
   > p {
     line-height: 1.5em;
@@ -244,9 +248,31 @@ const landing = () => (
           </Col1>
           <h4>One bio link</h4>
           <p>
-            Help your followers discover
+            Help your followers discover,
             <br />
-            all of your recent content
+            all of your recent content.
+          </p>
+        </InnerCol>
+        <InnerCol>
+          <Col1>
+            <Destination />
+          </Col1>
+          <h4>Multiple destinations</h4>
+          <p>
+            Send followers anywhere: articles,
+            <br />
+            webstore, events, socials and more.
+          </p>
+        </InnerCol>
+        <InnerCol>
+          <Col1>
+            <Managed />
+          </Col1>
+          <h4>Easily managed</h4>
+          <p>
+            Paste in new URLs, then drag
+            <br />
+            and drop the links to reorder.
           </p>
         </InnerCol>
       </div>
