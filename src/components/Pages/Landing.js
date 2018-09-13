@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import Onebio from './assests/onebio';
+import Destination from './assests/destination';
+import Managed from './assests/managed';
 
 const Landing = styled.div`
   display: block;
@@ -161,6 +164,72 @@ const IphoneText = styled.div`
     }
   }
 `;
+const ThreeCol = styled.div`
+  margin: 0 0 0 0;
+  > div {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+`;
+const InnerCol = styled.div`
+  text-align: center;
+  display: inline-block;
+  width: 31%;
+  margin: 0 2.3% 0 0;
+  margin-top: 0;
+  vertical-align: top;
+  > h4 {
+    font-size: 30px;
+    margin: 1.5rem auto 1rem;
+    font-family: Karla, Helvetica, sans-serif;
+    font-weight: 200;
+    color: #222;
+  }
+  > p {
+    line-height: 1.5em;
+    margin: 1.2rem 0;
+  }
+`;
+const Col1 = styled.div`
+  height: 82px;
+  width: 69px;
+  display: block;
+  margin: 0 auto;
+`;
+const CenterButton = styled.div`
+  display: block;
+  padding: 110px 0 90px 0;
+  > div {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 135px;
+    margin: 0 auto;
+    max-width: 1080px;
+    > a {
+      cursor: pointer;
+      color: #fff;
+      background-color: #39e09b;
+      border: 2px solid #39e09b;
+      border-radius: 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: all .25s cubic-bezier(.08,.59,.29,.99);
+      z-index: 2;
+      backface-visibility: hidden;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      font-size: 16px;
+      padding: 15px 35px;
+      outline: 0!important;
+      font-weight: 700
+      text-decoration: none;
+      display: inline-block;
+      line-height: 1.5;
+    }
+  }
+`;
+
 const landing = () => (
   <Landing>
     <MainHero>
@@ -206,6 +275,48 @@ const landing = () => (
         </IphoneText>
       </div>
     </HowHero>
+    <ThreeCol>
+      <div>
+        <InnerCol>
+          <Col1>
+            <Onebio />
+          </Col1>
+          <h4>One bio link</h4>
+          <p>
+            Help your followers discover,
+            <br />
+            all of your recent content.
+          </p>
+        </InnerCol>
+        <InnerCol>
+          <Col1>
+            <Destination />
+          </Col1>
+          <h4>Multiple destinations</h4>
+          <p>
+            Send followers anywhere: articles,
+            <br />
+            webstore, events, socials and more.
+          </p>
+        </InnerCol>
+        <InnerCol>
+          <Col1>
+            <Managed />
+          </Col1>
+          <h4>Easily managed</h4>
+          <p>
+            Paste in new URLs, then drag
+            <br />
+            and drop the links to reorder.
+          </p>
+        </InnerCol>
+      </div>
+    </ThreeCol>
+    <CenterButton>
+      <div>
+        <a href="/">It's exactly what I need!</a>
+      </div>
+    </CenterButton>
   </Landing>
 );
 

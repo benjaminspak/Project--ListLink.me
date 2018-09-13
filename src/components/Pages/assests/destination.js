@@ -1,0 +1,85 @@
+import React from 'react';
+
+const Destination = () => (
+  <svg
+    version="1.1"
+    id="Layer_1"
+    x="0px"
+    y="0px"
+    width="55px"
+    height="82px"
+    viewBox="0 0 55 82"
+    enableBackground="new 0 0 55 82"
+    xmlSpace="preserve"
+  >
+    <g>
+      <line
+        fill="none"
+        stroke="#ADADAD"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeMiterlimit="10"
+        x1="27.808"
+        y1="22.326"
+        x2="27.808"
+        y2="81"
+      />
+      <path
+        fill="none"
+        stroke="#39E09B"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeMiterlimit="10"
+        d="
+            M27.808,1c-0.707,0-5.965,7.081-5.965,13.419c0,3.899,2.396,7.097,5.443,7.424h1.044c3.132-0.327,5.443-3.525,5.443-7.424
+            C33.771,8.081,28.591,1,27.808,1z"
+      />
+      <path
+        fill="none"
+        stroke="#ADADAD"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeMiterlimit="10"
+        d="
+            M38.156,33.252c0,0-10.349,7.812-10.349,15.549"
+      />
+      <path
+        fill="none"
+        stroke="#39E09B"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeMiterlimit="10"
+        d="
+            M53.264,18.386c-0.5-0.5-9.226,0.79-13.707,5.271c-2.757,2.757-3.324,6.712-1.399,9.098l0.737,0.738
+            c2.444,1.983,6.342,1.356,9.099-1.4C52.473,27.611,53.814,18.939,53.264,18.386z"
+      />
+      <path
+        fill="none"
+        stroke="#ADADAD"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeMiterlimit="10"
+        d="
+            M17.459,43.253c0,0,10.348,7.812,10.348,15.549"
+      />
+      <path
+        fill="none"
+        stroke="#39E09B"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeMiterlimit="10"
+        d="
+            M7.623,42.093c2.756,2.757,6.653,3.384,9.098,1.4l0.738-0.738c1.924-2.385,1.356-6.341-1.401-9.097
+            c-4.481-4.482-13.206-5.772-13.706-5.272C1.798,28.94,3.141,37.611,7.623,42.093z"
+      />
+    </g>
+  </svg>
+);
+
+export default Destination;
