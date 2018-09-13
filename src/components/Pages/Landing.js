@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Onebio from './assests/onebio';
 
 const Landing = styled.div`
   display: block;
@@ -161,6 +162,28 @@ const IphoneText = styled.div`
     }
   }
 `;
+const ThreeCol = styled.div`
+  margin: 0 0 0 0;
+  > div {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+`;
+const InnerCol = styled.div`
+  text-align: center;
+  display: inline-block;
+  width: 31%;
+  margin-right: 3.5%;
+  margin-top: 0;
+  vertical-align: top;
+`;
+const Col1 = styled.div`
+  height: 82px;
+  width: 69px;
+  display: block;
+  margin: 0 auto;
+`;
+
 const landing = () => (
   <Landing>
     <MainHero>
@@ -206,6 +229,21 @@ const landing = () => (
         </IphoneText>
       </div>
     </HowHero>
+    <ThreeCol>
+      <div>
+        <InnerCol>
+          <Col1>
+            <Onebio />
+          </Col1>
+          <h4>One bio link</h4>
+          <p>
+            Help your followers discover
+            <br />
+            all of your recent content
+          </p>
+        </InnerCol>
+      </div>
+    </ThreeCol>
   </Landing>
 );
 
