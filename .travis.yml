@@ -3,14 +3,14 @@ node_js:
   - "stable"
 cache:
   directories:
-    - node_modules
+  - node_modules
 script:
   - npm test
   - npm run build
 deploy:
-  provider: surge
+  provider: pages
   skip_cleanup: true
-  domain: http://listlink.surge.sh/
-  project: ./build/
-on:
-  branch: master
+  github_token: $github_token
+  local_dir: build
+  on:
+    branch: master
