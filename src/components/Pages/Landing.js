@@ -86,20 +86,22 @@ const HowHero = styled.div`
     position: relative;
     padding: 0px;
     max-width: 1080px;
-    @media (max-width: 767px) {
-      margin-top: 180px;
-    }
   }
 `;
 const IphoneHolder = styled.div`
-  width: 55%;
-  position: absolute;
-  max-width: 682px;
-  padding-bottom: 59.1642%;
-  background-image: none;
+  @media (min-width: 767px) {
+    width: 55%;
+    position: absolute;
+    max-width: 682px;
+    padding-bottom: 59.1642%;
+    background-image: none;
+  }
+  display: block;
 `;
 const IphoneVideo = styled.div`
-  display: block;
+  @media (min-width: 767px) {
+    display: block;
+  }
 `;
 const Video = styled.video`
   position: absolute;
@@ -109,30 +111,40 @@ const Video = styled.video`
   object-fit: contain;
 `;
 const IphoneImage = styled.div`
+  @media (min-width: 767px) {
+    background-size: contain;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
   background-image: url(https://d1qr63pinnvtia.cloudfront.net/images/phone_linktree_home_new_d7a071bb.png);
-  background-size: contain;
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  background-position: center center;
-  background-repeat: no-repeat;
 `;
 const IphoneText = styled.div`
-  text-align: left;
-  width: 45%;
-  margin-left: 52%;
-  padding-bottom: 59.1642%;
-  position: relative;
+  @media (min-width: 767px) {
+    text-align: left;
+    width: 45%;
+    margin-left: 52%;
+    padding-bottom: 59.1642%;
+    position: relative;
+  }
+  text-align: center;
+  display: block;
   > div {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding-bottom: 15%;
+    @media (min-width: 767px) {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-bottom: 15%;
+      max-width: 385px;
+      margin: 0px auto;
+    }
     max-width: 385px;
-    margin: 0px auto;
+    margin: 0 auto;
     > h4 {
       text-align: left;
       font-size: 30px;
@@ -178,11 +190,17 @@ const ThreeCol = styled.div`
   }
 `;
 const InnerCol = styled.div`
+  @media (min-width: 767px) {
+    text-align: center;
+    display: inline-block;
+    width: 31%;
+    margin: 0 2.3% 0 0;
+    margin-top: 0;
+    vertical-align: top;
+  }
   text-align: center;
-  display: inline-block;
-  width: 31%;
-  margin: 0 2.3% 0 0;
-  margin-top: 0;
+  width: 100%;
+  margin-top: 80px;
   vertical-align: top;
   > h4 {
     font-size: 30px;
@@ -204,10 +222,10 @@ const Col1 = styled.div`
 `;
 const CenterButton = styled.div`
   display: block;
-  padding: 110px 0 90px 0;
+  padding: 100px 0 90px 0;
   > div {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 20px;
     margin-bottom: 135px;
     margin: 0 auto;
     max-width: 1080px;
