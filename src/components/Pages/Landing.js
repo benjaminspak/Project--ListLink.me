@@ -63,10 +63,14 @@ const TextHero = styled.div`
     padding: 0;
     margin: 0 auto;
     max-width: 1080px;
+    display: block;
     > h3 {
-      margin: 60px auto;
-      font-size: 50px;
-      padding: 0;
+      @media (max-width: 767px) {
+        font-size: 30px;
+      }
+      margin: 40px auto;
+      font-size: 40px;
+      padding: 0 20px;
       max-width: 960px;
       text-align: center;
       font-weight: 400;
@@ -82,7 +86,9 @@ const HowHero = styled.div`
     position: relative;
     padding: 0px;
     max-width: 1080px;
-    margin: 0px auto;
+    @media (max-width: 767px) {
+      margin-top: 180px;
+    }
   }
 `;
 const IphoneHolder = styled.div`
