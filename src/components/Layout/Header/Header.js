@@ -28,6 +28,14 @@ const Logo = styled.div`
   margin: 0 auto 0 auto;
 `;
 const RightGutter = styled.div`
+  @media (max-width: 767px) {
+    height: 40px;
+    margin-right: 0;
+    background-color: #ddd;
+    margin: 50px 0 0 0;
+    width: 100%;
+    z-index: 1039;
+  }
   position: absolute;
   top: 0;
   right: 0;
@@ -35,10 +43,12 @@ const RightGutter = styled.div`
   z-index: 1039;
   margin-right: 5px;
   > div {
+    @media (max-width: 767px) {
+      text-align: center;
+    }
     position: relative;
     top: 40%;
     transform: translateY(-50%);
-    text-align: right;
     height: 40px;
   }
 `;
@@ -64,6 +74,9 @@ const Links = styled.ul`
     z-index: 2;
     font-weight: 400;
     > span {
+      @media (max-width: 767px) {
+        display: none;
+      }
       background-color: #39e09b;
       border: 2px solid #39e09b;
       border-radius: 0;
